@@ -1,0 +1,29 @@
+{
+  "name": "json-server-api-tarefas",
+  "version": "1.0.0",
+  "description": "API de tarefas com JSON server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start-prod": "pm2 start index.js -f",
+    "stop-prod": "pm2 start stop all",
+    "delete-prod": "pm2 delete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorColetoBueno/json-server-api-tarefas.git"
+  },
+  "author": "Igor Bueno e Hoelesen França",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorColetoBueno/json-server-api-tarefas/issues"
+  },
+  "homepage": "https://github.com/IgorColetoBueno/json-server-api-tarefas#readme",
+  "dependencies": {
+    "json-server": "^0.14.2",
+    "pm2": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
